@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Blessings and Decrees</title>
+        <script src="html2canvas.js"></script>
+        <script src="canvas-toBlob.js"></script>
+        <script src="FileSaver.js"></script>
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="content">
+            <div class="show">
+                <h1>Decrees</h1>
+                <h2>The Decree with the most votes from the community will go into effect.</h2>
+                <div class="decrees">
+                    <div class="decrees-box">
+                        <img class="icon" src="perspective-dice-six-faces-random.png">
+                        <input id=decree1 type="file" onchange="uploadImage(this);" >
+                        <label for=decree1 class=ignore>Change icon</label>
+                        <h1 contenteditable="true" spellcheck="false">TBD</h1>
+                        <h2 contenteditable="true" spellcheck="false">TBD</h2>
+                        <button class="select">Select</button>
+                    </div>
+                    <div class="decrees-box">
+                        <img class="icon" src="perspective-dice-six-faces-random.png">
+                        <input id=decree2 type="file" onchange="uploadImage(this);" >
+                        <label for=decree2 class=ignore>Change icon</label>
+                        <h1 contenteditable="true" spellcheck="false">TBD</h1>
+                        <h2 contenteditable="true" spellcheck="false">TBD</h2>
+                        <button class="select">Select</button>
+                    </div>
+                    <div class="decrees-box">
+                        <img class="icon" src="perspective-dice-six-faces-random.png">
+                        <input id=decree3 type="file" onchange="uploadImage(this);" >
+                        <label for=decree3 class=ignore>Change icon</label>
+                        <h1 contenteditable="true" spellcheck="false">TBD</h1>
+                        <h2 contenteditable="true" spellcheck="false">TBD</h2>
+                        <button class="select">Select</button>
+                    </div>
+                </div>
+                <button class="button">Submit Decree Vote</button>
+                <h1>Blessings</h1>
+                <h2>Each Blessing will be rewarded to a randomly selected player. Vote for Blessings for chances to win them for your team.</h2>
+                <div class="blessings">
+                    <div class="blessings-box">
+                        <h1 contenteditable="true" spellcheck="false">TBD</h1>
+                        <h3 class="sponsor">Brought to you by</h3>
+                        <h2 contenteditable="true" spellcheck="false" class="yellow sponsor">TBD</h2>
+                        <h2 contenteditable="true" spellcheck="false">TBD</h2>
+                        <button class="select">Select</button>
+                        <h3 class="ignore sponsorbutton" onclick="toggleSponser(this)">Toggle Sponsor</h3>
+                        <!-- <h3 class="ignore" onclick="downloadBlessing(this)">Download Blessing</h3> -->
+                    </div>
+                    <div class="blessings-box">
+                        <h1 contenteditable="true" spellcheck="false">TBD</h1>
+                        <h3 class="sponsor">Brought to you by</h3>
+                        <h2 contenteditable="true" spellcheck="false" class="yellow sponsor">TBD</h2>
+                        <h2 contenteditable="true" spellcheck="false">TBD</h2>
+                        <button class="select">Select</button>
+                        <h3 class="ignore sponsorbutton" onclick="toggleSponser(this)">Toggle Sponsor</h3>
+                    </div>
+                    <div class="blessings-box">
+                        <h1 contenteditable="true" spellcheck="false">TBD</h1>
+                        <h3 class="sponsor">Brought to you by</h3>
+                        <h2 contenteditable="true" spellcheck="false" class="yellow sponsor">TBD</h2>
+                        <h2 contenteditable="true" spellcheck="false">TBD</h2>
+                        <button class="select">Select</button>
+                        <h3 class="ignore sponsorbutton" onclick="toggleSponser(this)">Toggle Sponsor</h3>
+                    </div>
+                    <div class="blessings-box">
+                        <h1 contenteditable="true" spellcheck="false">TBD</h1>
+                        <h3 class="sponsor">Brought to you by</h3>
+                        <h2 contenteditable="true" spellcheck="false" class="yellow sponsor">TBD</h2>
+                        <h2 contenteditable="true" spellcheck="false">TBD</h2>
+                        <button class="select">Select</button>
+                        <h3 class="ignore sponsorbutton" onclick="toggleSponser(this)">Toggle Sponsor</h3>
+                    </div>
+                    <div class="blessings-box">
+                        <h1 contenteditable="true" spellcheck="false">TBD</h1>
+                        <h3 class="sponsor">Brought to you by</h3>
+                        <h2 contenteditable="true" spellcheck="false" class="yellow sponsor">TBD</h2>
+                        <h2 contenteditable="true" spellcheck="false">TBD</h2>
+                        <button class="select">Select</button>
+                        <h3 class="ignore sponsorbutton" onclick="toggleSponser(this)">Toggle Sponsor</h3>
+                    </div>
+                    <div class="blessings-box">
+                        <h1 contenteditable="true" spellcheck="false">TBD</h1>
+                        <h3 class="sponsor">Brought to you by</h3>
+                        <h2 contenteditable="true" spellcheck="false" class="yellow sponsor">TBD</h2>
+                        <h2 contenteditable="true" spellcheck="false">TBD</h2>
+                        <button class="select">Select</button>
+                        <h3 class="ignore sponsorbutton" onclick="toggleSponser(this)">Toggle Sponsor</h3>
+                    </div>
+                    <div class="blessings-box">
+                        <h1 contenteditable="true" spellcheck="false">TBD</h1>
+                        <h3 class="sponsor">Brought to you by</h3>
+                        <h2 contenteditable="true" spellcheck="false" class="yellow sponsor">TBD</h2>
+                        <h2 contenteditable="true" spellcheck="false">TBD</h2>
+                        <button class="select">Select</button>
+                        <h3 class="ignore sponsorbutton" onclick="toggleSponser(this)">Toggle Sponsor</h3>
+                    </div>
+                    <div class="blessings-box">
+                        <h1 contenteditable="true" spellcheck="false">TBD</h1>
+                        <h3 class="sponsor">Brought to you by</h3>
+                        <h2 contenteditable="true" spellcheck="false" class="yellow sponsor">TBD</h2>
+                        <h2 contenteditable="true" spellcheck="false">TBD</h2>
+                        <button class="select">Select</button>
+                        <h3 class="ignore sponsorbutton" onclick="toggleSponser(this)">Toggle Sponsor</h3>
+                    </div>
+                    <div class="blessings-box">
+                        <h1 contenteditable="true" spellcheck="false">TBD</h1>
+                        <h3 class="sponsor">Brought to you by</h3>
+                        <h2 contenteditable="true" spellcheck="false" class="yellow sponsor">TBD</h2>
+                        <h2 contenteditable="true" spellcheck="false">TBD</h2>
+                        <button class="select">Select</button>
+                        <h3 class="ignore sponsorbutton" onclick="toggleSponser(this)">Toggle Sponsor</h3>
+                    </div>
+                    <div class="blessings-box">
+                        <h1 contenteditable="true" spellcheck="false">TBD</h1>
+                        <h3 class="sponsor">Brought to you by</h3>
+                        <h2 contenteditable="true" spellcheck="false" class="yellow sponsor">TBD</h2>
+                        <h2 contenteditable="true" spellcheck="false">TBD</h2>
+                        <button class="select">Select</button>
+                        <h3 class="ignore sponsorbutton" onclick="toggleSponser(this)">Toggle Sponsor</h3>
+                    </div>
+                    <div class="blessings-box">
+                        <h1 contenteditable="true" spellcheck="false">TBD</h1>
+                        <h3 class="sponsor">Brought to you by</h3>
+                        <h2 contenteditable="true" spellcheck="false" class="yellow sponsor">TBD</h2>
+                        <h2 contenteditable="true" spellcheck="false">TBD</h2>
+                        <button class="select">Select</button>
+                        <h3 class="ignore sponsorbutton" onclick="toggleSponser(this)">Toggle Sponsor</h3>
+                    </div>
+                    <div class="blessings-box">
+                        <h1 contenteditable="true" spellcheck="false">TBD</h1>
+                        <h3 class="sponsor">Brought to you by</h3>
+                        <h2 contenteditable="true" spellcheck="false" class="yellow sponsor">TBD</h2>
+                        <h2 contenteditable="true" spellcheck="false">TBD</h2>
+                        <button class="select">Select</button>
+                        <h3 class="ignore sponsorbutton" onclick="toggleSponser(this)">Toggle Sponsor</h3>
+                    </div>
+                    <div class="blessings-box">
+                        <h1 contenteditable="true" spellcheck="false">TBD</h1>
+                        <h3 class="sponsor">Brought to you by</h3>
+                        <h2 contenteditable="true" spellcheck="false" class="yellow sponsor">TBD</h2>
+                        <h2 contenteditable="true" spellcheck="false">TBD</h2>
+                        <button class="select">Select</button>
+                        <h3 class="ignore sponsorbutton" onclick="toggleSponser(this)">Toggle Sponsor</h3>
+                    </div>
+                    <div class="blessings-box">
+                        <h1 contenteditable="true" spellcheck="false">TBD</h1>
+                        <h3 class="sponsor">Brought to you by</h3>
+                        <h2 contenteditable="true" spellcheck="false" class="yellow sponsor">TBD</h2>
+                        <h2 contenteditable="true" spellcheck="false">TBD</h2>
+                        <button class="select">Select</button>
+                        <h3 class="ignore sponsorbutton" onclick="toggleSponser(this)">Toggle Sponsor</h3>
+                    </div>
+                    <div class="blessings-box">
+                        <h1 contenteditable="true" spellcheck="false">TBD</h1>
+                        <h3 class="sponsor">Brought to you by</h3>
+                        <h2 contenteditable="true" spellcheck="false" class="yellow sponsor">TBD</h2>
+                        <h2 contenteditable="true" spellcheck="false">TBD</h2>
+                        <button class="select">Select</button>
+                        <h3 class="ignore sponsorbutton" onclick="toggleSponser(this)">Toggle Sponsor</h3>
+                    </div>
+                    <div class="blessings-box">
+                        <h1 contenteditable="true" spellcheck="false">TBD</h1>
+                        <h3 class="sponsor">Brought to you by</h3>
+                        <h2 contenteditable="true" spellcheck="false" class="yellow sponsor">TBD</h2>
+                        <h2 contenteditable="true" spellcheck="false">TBD</h2>
+                        <button class="select">Select</button>
+                        <h3 class="ignore sponsorbutton" onclick="toggleSponser(this)">Toggle Sponsor</h3>
+                    </div>
+                    <div class="blessings-box">
+                        <h1 contenteditable="true" spellcheck="false">TBD</h1>
+                        <h3 class="sponsor">Brought to you by</h3>
+                        <h2 contenteditable="true" spellcheck="false" class="yellow sponsor">TBD</h2>
+                        <h2 contenteditable="true" spellcheck="false">TBD</h2>
+                        <button class="select">Select</button>
+                        <h3 class="ignore sponsorbutton" onclick="toggleSponser(this)">Toggle Sponsor</h3>
+                    </div>
+                    <div class="blessings-box">
+                        <h1 contenteditable="true" spellcheck="false">TBD</h1>
+                        <h3 class="sponsor">Brought to you by</h3>
+                        <h2 contenteditable="true" spellcheck="false" class="yellow sponsor">TBD</h2>
+                        <h2 contenteditable="true" spellcheck="false">TBD</h2>
+                        <button class="select">Select</button>
+                        <h3 class="ignore sponsorbutton" onclick="toggleSponser(this)">Toggle Sponsor</h3>
+                    </div>
+                    <div class="blessings-box">
+                        <h1 contenteditable="true" spellcheck="false">TBD</h1>
+                        <h3 class="sponsor">Brought to you by</h3>
+                        <h2 contenteditable="true" spellcheck="false" class="yellow sponsor">TBD</h2>
+                        <h2 contenteditable="true" spellcheck="false">TBD</h2>
+                        <button class="select">Select</button>
+                        <h3 class="ignore sponsorbutton" onclick="toggleSponser(this)">Toggle Sponsor</h3>
+                    </div>
+                    <div class="blessings-box">
+                        <h1 contenteditable="true" spellcheck="false">TBD</h1>
+                        <h3 class="sponsor">Brought to you by</h3>
+                        <h2 contenteditable="true" spellcheck="false" class="yellow sponsor">TBD</h2>
+                        <h2 contenteditable="true" spellcheck="false">TBD</h2>
+                        <button class="select">Select</button>
+                        <h3 class="ignore sponsorbutton" onclick="toggleSponser(this)">Toggle Sponsor</h3>
+                    </div>
+                </div>
+                <button class="button">Submit Blessing Vote</button>
+            </div>
+            <p></p>
+            <hr>
+            <p></p>
+            <button onclick="download()" class="button download">Download Image</button>
+            <h1 style="text-align: center;">Click on the name, description, or sponsor to edit the text. When downloading the image, the "Toggle Sponsor" button will be ignored.</h1>
+        </div>
+    </body>
+</html>

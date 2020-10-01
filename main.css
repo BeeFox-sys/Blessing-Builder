@@ -1,0 +1,157 @@
+body{
+    color: white;
+    background-color: black;
+    font-family: "Open Sans","Helvetica Neue",sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 1em calc(50% - 512px);
+    -webkit-text-size-adjust: 100%;
+}
+
+.icon{
+    fill: #fff;
+    height: 48px;
+    /* width: 48px; */
+    /* object-fit: contain; Commented out till html2canvas fixes issue */
+}
+
+.button{
+    line-height: inherit;
+    padding: .375rem .75rem;
+    background-color: #28a745;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    height: 32px;
+    display: flex;
+    border-radius: 16px;
+    white-space: nowrap;
+    align-items: center;
+    border: 1.1px solid #fff;
+    margin: 0 auto;
+}
+
+.download{
+    cursor: pointer;
+}
+
+h1{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    width: 100%;
+    line-height: 1.2;
+}
+h2, p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.decrees-box{
+    display: flex;
+    background-color: rgba(30,30,30,.64);
+    border-radius: 5px;
+    flex: 1 1;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+.decrees-box h1, .blessings-box h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+.blessings-box{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(30,30,30,.64);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.decrees{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 24px;
+    grid-gap: 20px;
+    gap: 20px;
+}
+
+.blessings{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-bottom: 24px;
+    grid-gap: 20px;
+    gap: 20px;
+}
+
+.select{
+    border: none;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 16px;
+    margin-top: auto;
+    border-radius: 20px;
+    background: #fff;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.blessings-box h2, .decrees-box h2{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.blessings-box h3{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    margin: 0;
+    /* margin-top: -15px; */
+}
+
+.blessings-box h3.sponsor{
+    display: none;
+}
+
+.blessings-box h2.yellow{
+    display: none;
+    color: #ffeb57;
+    font-weight: 700;
+    margin: 0;
+    /* margin-top: -15px; */
+}
+
+.blessings-box.showSponsor h2.yellow, .blessings-box.showSponsor h3.sponsor{
+    display: unset;
+}
+
+h3.sponsorbutton{
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+input[type=file]{
+    display: none;
+}
+label{
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+}
